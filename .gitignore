@@ -1,0 +1,17 @@
+.DS_Store
+*.ly~
+*.svg
+*.pdf
+*.eps
+*.png
+*.tex
+*.texi
+*.count
+.gitignore~
+*.tex~
+*.org~
+*.md~
+*.bak*
+*.py~
+*.midi
+*.out

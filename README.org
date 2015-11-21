@@ -1,0 +1,80 @@
+* LilyPond-Library for tonal music theory symbols and chord progressions
+** What's this?
+This library contains new LilyPond commands to display functional harmony and scale degree symbols. They are to be used in a =Lyrics= context.
+
+This library is work in progress.  Not all of the commands listed below have already been implemented.  Please consult and/or compile the file =test-music-theory-symbols.ly= to see which symbols are currently available.
+
+** Legend of commands
+*** Basic command names
+**** Functional theory (german notation)
+Generally the letters of the german abbreviations for the diatonic functions are used as command names (e.g. =\T=, =\t=, =\S=, =\D=,...).  There are some rare exceptions.  =s= and =d= have a different meaning in LilyPond.  So you have to use =\sm= and =\dm= in order to display the symbols for a minor subdominant and a minor dominant.  All basic commands can be used in combination with an extension (see command extensions).  In this case you don't need to append an =m= to the symbols for minor subdominants and minor dominants (e.g. =\s-fi= = minor subdominant, first inversion).
+
+Here is a list of the basic commands:
+
++ =\T= :: Dur-Tonika — Major Tonic
++ =\Tp= :: Dur-Tonika-Moll-Parallele — Tonic parallel / Submediant
++ =\Tg= :: Dur-Tonika-Moll-Gegenklang — Tonic counter parallel / Mediant
++ =\t= :: Moll-Tonika — Minor Tonic
++ =\tP= :: Moll-Tonika-Dur-Parallele — Parallel of minor tonic
++ =\tG= :: Moll-Tonika-Dur-Gegenklang — Major counter parallel of minor tonic
++ =\S= :: Dur-Subdominante — Major Subdominant
++ =Aj= :: Dur-Sixte ajoutée / Dur-Subdominante mit hinzugefügter Sexte —
++ =aj= :: Moll-Sixte ajoutée / Moll-Subdominante mit hinzugefügter Sexte —
++ =\Sp= :: Dur-Subdominant-Moll-Paralle — Minor parallel of Major Subdominant / Supertonic
++ =\Sg= :: Dur-Subdominant-Moll-Gegenklang — Subdominant counter parallel / Submediant
++ =\sm= :: Moll-Subdominante — Minor Subdominant
++ =\sP= :: Moll-Subdominant-Dur-Parallele — Major parallel of minor subdominant
++ =\sG= :: Moll-Subdominant-Dur-Gegenklang — Major counter parallel of minor subdominant
++ =\N= :: Neapolitanischer Sextakkord
++ =\SS= :: Dur-Doppelsubdominante — ?
++ =\DT= :: Dur-Dominante — Major Dominant
++ =\DD= :: Dur-Doppeldominante — Dominant of the dominant
++ =\It= :: Italian Sixth
++ =\Fr= :: French Sixth
++ =\Ge= :: German Sixth
++ =\Dp= :: Dur-Dominant-Moll-Parallele — Dominant parallel / Mediant
++ =\Dg= :: Dur-Dominant-Moll-Gegenklang — Dominant counter parallel
++ =\dm= :: Moll-Dominante — Minor Dominant
++ =\dP= :: Moll-Dominant-Dur-Parallele — Major parallel of minor dominant
++ =\dG= :: Moll-Dominant-Dur-Gegenklang — Major counter parallel of minor dominant
++ =\p= :: Prolongation
+
+**** Scale degree theory (roman numeral notation)
+
++ =\I= :: Dur-Tonika — Major Tonic
++ =\i= :: Moll-Tonika — Minor Tonic
++ =\II= :: Doppeldominante — Dominant of the dominant
++ =\ii= :: Dur-Subdominant-Moll-Parallele — Subdominant parallel / Supertonic
++ =\iii= :: Dur-Tonika-Moll-Gegenklang / Dur-Dominant-Moll-Parallele — Mediant
++ =\IV= :: Dur-Subdominante — Major subdominant
++ =\iv= :: Moll-Subdominante — Minor subdominant
++ =\V= :: Dur-Dominante — Major dominant
++ =\v= :: Moll-Dominante — Minor dominant
++ =\vi= :: Dur-Tonika-Moll-Parallele — Submediant
++ =\vii= :: verkürzter Dur-Dominantseptakkord — Leading / dominant seventh without root
+*** Command extensions
+Extensions are to be appended to the basic commands with dashes:
+
++ =-two= :: suspension 2 (-> 3) or passing tone
++ =-three= :: suspension resolved (4 ->) 3
++ =-four= :: suspension 4 (-> 3) or passing tone
++ =-fivethree= :: double suspension resolved (6/4 ->) 5/3
++ =-six= :: added sixth
++ =-sixfour= :: double suspension 6/4 (-> 5/3)
++ =-seven= :: seventh chords — Septakkorde
++ =-eight= :: suspension resolved (9 ->) 8
++ =-eightthree= :: double suspension resolved (9/4 ->) 8/3
++ =-nine= :: suspension 9 (-> 8)
++ =-ninefour= :: double suspension 9/4  (-> 8/3)
++ =-backslash= :: diagonally slashed function names (e.g. Dominant seventh without root) — Diagonal durchgestrichene Funktionsnamen (z.B. verkürzter Dominantseptakkord)
++ =flat= :: flat, e.g. b9 or b5
++ =aug= :: augmented, e.g. #9 or #5
++ =-fi= :: first inversion — Erste Umkehrung
++ =-si= :: second inversion — Zweite Umkehrung
++ =-ti= :: third inversion — Dritte Umkehrung
++ =-tot= :: third on top — Terzlage
++ =-fot= :: fifth on top — Quintlage
++ =-eot= :: eighth on top — Oktavlage
++ =-cp= :: closed position — Enge Lage
++ =-op= :: open position — Weite Lage
++ =-mp= :: mixed position — Gemischte Lage
