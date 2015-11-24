@@ -26,13 +26,15 @@
   }
 }
 
-devNullMajorTonic = {
+devNullDurTonika = {
   \repeat unfold 22 { c1 }
   \break
   \repeat unfold 10 { c1 }
+  \break
+  \repeat unfold 2 { c1 }
 }
 
-functionTheoryMajorTonic = \lyricmode {
+functionTheoryDurTonika = \lyricmode {
   \set stanza = #"Function Theory:"
   \T             |%1
   \T-tot         |%2
@@ -70,9 +72,12 @@ functionTheoryMajorTonic = \lyricmode {
   \T-si-tot      |%
   \T-si-fot      |%
   \T-si-eot      |%
+
+  \Tp            |%
+  \Tg            |%
 }
 
-commandsFunctionTheoryMajorTonic = \lyricmode {
+commandsFunctionTheoryDurTonika = \lyricmode {
 
   \set stanza = #"commands:"
   "\T"        |%
@@ -111,29 +116,34 @@ commandsFunctionTheoryMajorTonic = \lyricmode {
   "\T-si-tot" |%
   "\T-si-fot" |%
   "\T-si-eot" |%
+
+  "\Tp"       |%
+  "\Tg"       |%
 }
 
 \score {
          <<
-           \new Devnull = "null" { \devNullMajorTonic }
-           \new Lyrics \lyricsto "null" \functionTheoryMajorTonic
-           \new AltLyrics \lyricsto "null" \commandsFunctionTheoryMajorTonic
+           \new Devnull = "null" { \devNullDurTonika }
+           \new Lyrics \lyricsto "null" \functionTheoryDurTonika
+           \new AltLyrics \lyricsto "null" \commandsFunctionTheoryDurTonika
          >>
          \header {
            title = ##f
-           subtitle = "Major Tonic (Dur-Tonika)"
+           subtitle = "Dur-Tonika — Major Tonic"
          }
          \layout { }
        }
 %     }
 
-devNullMinorTonic = {
+devNullMollTonika = {
   \repeat unfold 20 { c1 }
   \break
   \repeat unfold 8 { c1 }
+  \break
+  \repeat unfold 2 { c1 }
 }
 
-functionTheoryMinorTonic = \lyricmode {
+functionTheoryMollTonika = \lyricmode {
   \set stanza = #"Function Theory:"
   \t             |%1
   \t-tot         |%2
@@ -166,9 +176,12 @@ functionTheoryMinorTonic = \lyricmode {
   \t-si-tot      |%
   \t-si-fot      |%
   \t-si-eot      |%
+
+  \tP            |%
+  \tG            |%
 }
 
-commandsFunctionTheoryMinorTonic = \lyricmode {
+commandsFunctionTheoryMollTonika = \lyricmode {
 
   \set stanza = #"commands:"
   "\\t"         |%1
@@ -202,6 +215,9 @@ commandsFunctionTheoryMinorTonic = \lyricmode {
   "\\t-si-tot" |%
   "\\t-si-fot" |%
   "\\t-si-eot" |%
+
+  "\\tP"       |%
+  "\\tG"       |%
 }
 
 %     \book {
@@ -213,25 +229,27 @@ commandsFunctionTheoryMinorTonic = \lyricmode {
 %       }
        \score {
          <<
-           \new Devnull = "null" { \devNullMinorTonic }
-           \new Lyrics \lyricsto "null" \functionTheoryMinorTonic
-           \new AltLyrics \lyricsto "null" \commandsFunctionTheoryMinorTonic
+           \new Devnull = "null" { \devNullMollTonika }
+           \new Lyrics \lyricsto "null" \functionTheoryMollTonika
+           \new AltLyrics \lyricsto "null" \commandsFunctionTheoryMollTonika
          >>
          \header {
            title = ##f
-           subtitle = "Minor Tonic (Moll-Tonika)"
+           subtitle = "Moll-Tonika — Minor Tonic"
          }
          \layout { }
        }
 %     }
 
-devNullMajorSubdominant = {
-  \repeat unfold 19 { c1 }
+devNullDurSubdominante = {
+  \repeat unfold 20 { c1 }
   \break
   \repeat unfold 8 { c1 }
+  \break
+  \repeat unfold 2 { c1 }
 }
 
-functionTheoryMajorSubdominant = \lyricmode {
+functionTheoryDurSubdominante = \lyricmode {
   \set stanza = #"Function Theory:"
   \S             |%1
   \S-tot         |%2
@@ -250,6 +268,7 @@ functionTheoryMajorSubdominant = \lyricmode {
   \S-four-three  |%14
   \S-six         |%
   \N-six         |%
+  \S-six-five    |%
   \S-sixfour-fivethree |%
   \S-nine-eight  |%
   \S-ninefour-eightthree |%
@@ -263,9 +282,12 @@ functionTheoryMajorSubdominant = \lyricmode {
   \S-si-tot      |%
   \S-si-fot      |%
   \S-si-eot      |%
+
+  \Sp            |%
+  \Sg            |%
 }
 
-commandsFunctionTheoryMajorSubdominant = \lyricmode {
+commandsFunctionTheoryDurSubdominante = \lyricmode {
 
   \set stanza = #"commands:"
   "\S"        |%1
@@ -285,6 +307,7 @@ commandsFunctionTheoryMajorSubdominant = \lyricmode {
   "\S-four-three"  |%14
   "\S-six"  |%
   "\N-six"  |%
+  "\S-six-five"  |%
   "\S-sixfour-fivethree" |%
   "\S-nine-eight" |%
   "\S-ninefour-eightthree |%"
@@ -298,31 +321,36 @@ commandsFunctionTheoryMajorSubdominant = \lyricmode {
   "\S-si-tot" |%
   "\S-si-fot" |%
   "\S-si-eot" |%
+
+  "\Sp"       |%
+  "\Sg"       |%
 }
 
 \score {
          <<
-           \new Devnull = "null" { \devNullMajorSubdominant }
-           \new Lyrics \lyricsto "null" \functionTheoryMajorSubdominant
-           \new AltLyrics \lyricsto "null" \commandsFunctionTheoryMajorSubdominant
+           \new Devnull = "null" { \devNullDurSubdominante }
+           \new Lyrics \lyricsto "null" \functionTheoryDurSubdominante
+           \new AltLyrics \lyricsto "null" \commandsFunctionTheoryDurSubdominante
          >>
          \header {
            title = ##f
-           subtitle = "Major Subdominant (Dur-Subdominante)"
+           subtitle = "Dur-Subdominante — Major Subdominant"
          }
          \layout { }
        }
 %     }
 
-devNullMinorSubdominant = {
+devNullMollSubdominante = {
   \repeat unfold 17 { c1 }
   \break
   \repeat unfold 6 { c1 }
   \break
   \repeat unfold 9 { c1 }
+  \break
+  \repeat unfold 2 { c1 }
 }
 
-functionTheoryMinorSubdominant = \lyricmode {
+functionTheoryMollSubdominante = \lyricmode {
   \set stanza = #"Function Theory:"
   \sm            |%1
   \s-tot         |%2
@@ -361,9 +389,12 @@ functionTheoryMinorSubdominant = \lyricmode {
   \s-si-fot      |%
 
   \s-si-eot      |%
+
+  \sP            |%
+  \sG            |%
 }
 
-commandsFunctionTheoryMinorSubdominant = \lyricmode {
+commandsFunctionTheoryMollSubdominante = \lyricmode {
 
   \set stanza = #"commands:"
   "\sm"       |%1
@@ -402,23 +433,26 @@ commandsFunctionTheoryMinorSubdominant = \lyricmode {
   "\s-si-tot" |%
   "\s-si-fot" |%
   "\s-si-eot" |%
+
+  "\sP"       |%
+  "\sG"       |%
 }
 
 \score {
          <<
-           \new Devnull = "null" { \devNullMinorSubdominant }
-           \new Lyrics \lyricsto "null" \functionTheoryMinorSubdominant
-           \new AltLyrics \lyricsto "null" \commandsFunctionTheoryMinorSubdominant
+           \new Devnull = "null" { \devNullMollSubdominante }
+           \new Lyrics \lyricsto "null" \functionTheoryMollSubdominante
+           \new AltLyrics \lyricsto "null" \commandsFunctionTheoryMollSubdominante
          >>
          \header {
            title = ##f
-           subtitle = "Minor Subdominant (Moll-Subdominante)"
+           subtitle = "Moll-Subdominante — Minor Subdominant"
          }
          \layout { }
        }
 %     }
 
-devNullMajorDominant = {
+devNullDurDominante = {
   \repeat unfold 21 { c1 }
   %\break
   \repeat unfold 3 { c1 }
@@ -432,9 +466,11 @@ devNullMajorDominant = {
   \repeat unfold 4 { c1 }
   \break
   \repeat unfold 1 { c1 }
+  \break
+  \repeat unfold 2 { c1 }
 }
 
-functionTheoryMajorDominant = \lyricmode {
+functionTheoryDurDominante = \lyricmode {
   \set stanza = #"Function Theory:"
   \D             |%
   \D-tot         |%
@@ -505,9 +541,12 @@ functionTheoryMajorDominant = \lyricmode {
   \D-seven-backslash-ti    |%
 
   \DD-seven-fi |%
+
+  \Dp          |%
+  \Dg          |%
 }
 
-commandsFunctionTheoryMajorDominant = \lyricmode {
+commandsFunctionTheoryDurDominante = \lyricmode {
 
   \set stanza = #"commands:"
   "\D"        |%
@@ -579,31 +618,36 @@ commandsFunctionTheoryMajorDominant = \lyricmode {
   "\D-seven-backslash-ti" |%
 
   "\DD-seven-fi"  |%
+
+  "\Dp"           |%
+  "\Dg"           |%
 }
 
 \score {
          <<
-           \new Devnull = "null" { \devNullMajorDominant }
-           \new Lyrics \lyricsto "null" \functionTheoryMajorDominant
-           \new AltLyrics \lyricsto "null" \commandsFunctionTheoryMajorDominant
+           \new Devnull = "null" { \devNullDurDominante }
+           \new Lyrics \lyricsto "null" \functionTheoryDurDominante
+           \new AltLyrics \lyricsto "null" \commandsFunctionTheoryDurDominante
          >>
          \header {
            title = ##f
-           subtitle = "Major Dominant (Dur-Dominante)"
+           subtitle = "Dur-Dominante — Major Dominant"
          }
          \layout { }
        }
 %     }
 
-devNullMinorDominant = {
+devNullMollDominante = {
   \repeat unfold 13 { c1 }
   \break
   \repeat unfold 4 { c1 }
   %\break
   \repeat unfold 4 { c1 }
+  \break
+  \repeat unfold 2 { c1 }
 }
 
-functionTheoryMinorDominant = \lyricmode {
+functionTheoryMollDominante = \lyricmode {
   \set stanza = #"Function Theory:"
   \dm            |%1
   \d-tot         |%2
@@ -629,9 +673,12 @@ functionTheoryMinorDominant = \lyricmode {
   \d-si-fot      |%20
 
   \d-si-eot      |%21
+
+  \dP            |%
+  \dG            |%
 }
 
-commandsFunctionTheoryMinorDominant = \lyricmode {
+commandsFunctionTheoryMollDominante = \lyricmode {
 
   \set stanza = #"commands:"
   "\dm"       |%1
@@ -657,17 +704,20 @@ commandsFunctionTheoryMinorDominant = \lyricmode {
   "\d-si-tot" |%19
   "\d-si-fot" |%20
   "\d-si-eot" |%21
+
+  "\dP"       |%
+  "\dG"       |%
 }
 
 \score {
   <<
-    \new Devnull = "null" { \devNullMinorDominant }
-    \new Lyrics \lyricsto "null" \functionTheoryMinorDominant
-    \new AltLyrics \lyricsto "null" \commandsFunctionTheoryMinorDominant
+    \new Devnull = "null" { \devNullMollDominante }
+    \new Lyrics \lyricsto "null" \functionTheoryMollDominante
+    \new AltLyrics \lyricsto "null" \commandsFunctionTheoryMollDominante
   >>
   \header {
     title = ##f
-    subtitle = "Minor Dominant (Moll-Dominante)"
+    subtitle = "Moll-Dominante — Minor Dominant"
   }
   \layout { }
 }

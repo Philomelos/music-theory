@@ -38,61 +38,66 @@
 }
 #+END_SRC
 
-** Score: Major Tonic Symbols
-*** Devnull Major Tonic Symbols
+** Score: Dur-Tonika — Major Tonic Symbols
+*** Devnull Dur-Tonika — Major Tonic Symbols
 #+BEGIN_SRC lilypond
-  devNullMajorTonic = {
+  devNullDurTonika = {
     \repeat unfold 22 { c1 }
     \break
     \repeat unfold 10 { c1 }
+    \break
+    \repeat unfold 2 { c1 }
   }
 #+END_SRC
-*** [Lyrics] Major Tonic Function theory symbols (german notation)
+*** [Lyrics] Dur-Tonika — Major Tonic Function theory symbols (german notation)
 #+BEGIN_SRC lilypond
-functionTheoryMajorTonic = \lyricmode {
-  \set stanza = #"Function Theory:"
-  \T             |%1
-  \T-tot         |%2
-  \T-tot-cp      |%3
-  \T-tot-op      |%4
-  \T-tot-mp      |%5
-  \T-fot         |%6
-  \T-fot-cp      |%7
-  \T-fot-op      |%8
-  \T-fot-mp      |%9
-  \T-eot         |%10
-  \T-eot-cp      |%11
-  \T-eot-cp-fot-cp |%
-  \T-eot-cp-fot-op |%
-  \T-eot-op      |%
-  \T-eot-op-fot-cp |%
-  \T-eot-op-fot-op |%
-  \T-eot-mp      |%
+  functionTheoryDurTonika = \lyricmode {
+    \set stanza = #"Function Theory:"
+    \T             |%1
+    \T-tot         |%2
+    \T-tot-cp      |%3
+    \T-tot-op      |%4
+    \T-tot-mp      |%5
+    \T-fot         |%6
+    \T-fot-cp      |%7
+    \T-fot-op      |%8
+    \T-fot-mp      |%9
+    \T-eot         |%10
+    \T-eot-cp      |%11
+    \T-eot-cp-fot-cp |%
+    \T-eot-cp-fot-op |%
+    \T-eot-op      |%
+    \T-eot-op-fot-cp |%
+    \T-eot-op-fot-op |%
+    \T-eot-mp      |%
 
-  \T-four-three  |%
-  \T-six-five    |%
-  \T-sixfour-fivethree |%
-  \T-nine-eight  |%
-  \T-ninefour-eightthree |%
+    \T-four-three  |%
+    \T-six-five    |%
+    \T-sixfour-fivethree |%
+    \T-nine-eight  |%
+    \T-ninefour-eightthree |%
 
-  \T-fi          |%
-  \T-fi-tot      |%
-  \T-fi-fot      |%
-  \T-fi-eot      |%
+    \T-fi          |%
+    \T-fi-tot      |%
+    \T-fi-fot      |%
+    \T-fi-eot      |%
 
-  \T-six-five-fi    |%
-  \T-nine-eight-fi  |%
+    \T-six-five-fi    |%
+    \T-nine-eight-fi  |%
 
-  \T-si          |%
-  \T-si-tot      |%
-  \T-si-fot      |%
-  \T-si-eot      |%
-}
+    \T-si          |%
+    \T-si-tot      |%
+    \T-si-fot      |%
+    \T-si-eot      |%
+
+    \Tp            |%
+    \Tg            |%
+  }
 #+END_SRC
 
-*** [Lyrics] Major Tonic Commands
+*** [Lyrics] Dur-Tonika — Major Tonic Commands
 #+BEGIN_SRC lilypond
-commandsFunctionTheoryMajorTonic = \lyricmode {
+commandsFunctionTheoryDurTonika = \lyricmode {
 
   \set stanza = #"commands:"
   "\T"        |%
@@ -131,37 +136,42 @@ commandsFunctionTheoryMajorTonic = \lyricmode {
   "\T-si-tot" |%
   "\T-si-fot" |%
   "\T-si-eot" |%
+
+  "\Tp"       |%
+  "\Tg"       |%
 }
 #+END_SRC
 
-*** [Output] Major Tonic Score
+*** [Output] Dur-Tonika — Major Tonic Score
 #+BEGIN_SRC lilypond
        \score {
          <<
-           \new Devnull = "null" { \devNullMajorTonic }
-           \new Lyrics \lyricsto "null" \functionTheoryMajorTonic
-           \new AltLyrics \lyricsto "null" \commandsFunctionTheoryMajorTonic
+           \new Devnull = "null" { \devNullDurTonika }
+           \new Lyrics \lyricsto "null" \functionTheoryDurTonika
+           \new AltLyrics \lyricsto "null" \commandsFunctionTheoryDurTonika
          >>
          \header {
            title = ##f
-           subtitle = "Major Tonic (Dur-Tonika)"
+           subtitle = "Dur-Tonika — Major Tonic"
          }
          \layout { }
        }
 %     }
 #+END_SRC
-** Score: Minor Tonic Symbols
-*** Devnull Minor Tonic Symbols
+** Score: Moll-Tonika — Minor Tonic Symbols
+*** Devnull Moll-Tonika — Minor Tonic Symbols
 #+BEGIN_SRC lilypond
-  devNullMinorTonic = {
+  devNullMollTonika = {
     \repeat unfold 20 { c1 }
     \break
     \repeat unfold 8 { c1 }
+    \break
+    \repeat unfold 2 { c1 }
   }
 #+END_SRC
-*** [Lyrics] Minor Tonic Function theory symbols
+*** [Lyrics] Moll-Tonika — Minor Tonic Function theory symbols
 #+BEGIN_SRC lilypond
-functionTheoryMinorTonic = \lyricmode {
+functionTheoryMollTonika = \lyricmode {
   \set stanza = #"Function Theory:"
   \t             |%1
   \t-tot         |%2
@@ -194,12 +204,15 @@ functionTheoryMinorTonic = \lyricmode {
   \t-si-tot      |%
   \t-si-fot      |%
   \t-si-eot      |%
+
+  \tP            |%
+  \tG            |%
 }
 #+END_SRC
 
-*** [Lyrics] Minor Tonic Commands
+*** [Lyrics] Moll-Tonika — Minor Tonic Commands
 #+BEGIN_SRC lilypond
-commandsFunctionTheoryMinorTonic = \lyricmode {
+commandsFunctionTheoryMollTonika = \lyricmode {
 
   \set stanza = #"commands:"
   "\\t"         |%1
@@ -233,10 +246,13 @@ commandsFunctionTheoryMinorTonic = \lyricmode {
   "\\t-si-tot" |%
   "\\t-si-fot" |%
   "\\t-si-eot" |%
+
+  "\\tP"       |%
+  "\\tG"       |%
 }
 #+END_SRC
 
-*** [Output] Minor Tonic Score
+*** [Output] Moll-Tonika — Minor Tonic Score
 #+BEGIN_SRC lilypond
 %     \book {
        \paper {
@@ -247,30 +263,32 @@ commandsFunctionTheoryMinorTonic = \lyricmode {
 %       }
        \score {
          <<
-           \new Devnull = "null" { \devNullMinorTonic }
-           \new Lyrics \lyricsto "null" \functionTheoryMinorTonic
-           \new AltLyrics \lyricsto "null" \commandsFunctionTheoryMinorTonic
+           \new Devnull = "null" { \devNullMollTonika }
+           \new Lyrics \lyricsto "null" \functionTheoryMollTonika
+           \new AltLyrics \lyricsto "null" \commandsFunctionTheoryMollTonika
          >>
          \header {
            title = ##f
-           subtitle = "Minor Tonic (Moll-Tonika)"
+           subtitle = "Moll-Tonika — Minor Tonic"
          }
          \layout { }
        }
 %     }
 #+END_SRC
-** Score: Major Subdominant Symbols
-*** Devnull Major Subdominant Symbols
+** Score: Dur-Subdominante — Major Subdominant Symbols
+*** Devnull Dur-Subdominante — Major Subdominant Symbols
 #+BEGIN_SRC lilypond
-  devNullMajorSubdominant = {
-    \repeat unfold 19 { c1 }
+  devNullDurSubdominante = {
+    \repeat unfold 20 { c1 }
     \break
     \repeat unfold 8 { c1 }
+    \break
+    \repeat unfold 2 { c1 }
   }
 #+END_SRC
-*** [Lyrics] Major Subdominant Function theory symbols
+*** [Lyrics] Dur-Subdominante — Major Subdominant Function theory symbols
 #+BEGIN_SRC lilypond
-functionTheoryMajorSubdominant = \lyricmode {
+functionTheoryDurSubdominante = \lyricmode {
   \set stanza = #"Function Theory:"
   \S             |%1
   \S-tot         |%2
@@ -289,6 +307,7 @@ functionTheoryMajorSubdominant = \lyricmode {
   \S-four-three  |%14
   \S-six         |%
   \N-six         |%
+  \S-six-five    |%
   \S-sixfour-fivethree |%
   \S-nine-eight  |%
   \S-ninefour-eightthree |%
@@ -302,12 +321,15 @@ functionTheoryMajorSubdominant = \lyricmode {
   \S-si-tot      |%
   \S-si-fot      |%
   \S-si-eot      |%
+
+  \Sp            |%
+  \Sg            |%
 }
 #+END_SRC
 
-*** [Lyrics] Major Subdominant Commands
+*** [Lyrics] Dur-Subdominante — Major Subdominant Commands
 #+BEGIN_SRC lilypond
-commandsFunctionTheoryMajorSubdominant = \lyricmode {
+commandsFunctionTheoryDurSubdominante = \lyricmode {
 
   \set stanza = #"commands:"
   "\S"        |%1
@@ -327,6 +349,7 @@ commandsFunctionTheoryMajorSubdominant = \lyricmode {
   "\S-four-three"  |%14
   "\S-six"  |%
   "\N-six"  |%
+  "\S-six-five"  |%
   "\S-sixfour-fivethree" |%
   "\S-nine-eight" |%
   "\S-ninefour-eightthree |%"
@@ -340,39 +363,44 @@ commandsFunctionTheoryMajorSubdominant = \lyricmode {
   "\S-si-tot" |%
   "\S-si-fot" |%
   "\S-si-eot" |%
+
+  "\Sp"       |%
+  "\Sg"       |%
 }
 #+END_SRC
 
-*** [Output] Major Subdominant Score
+*** [Output] Dur-Subdominante — Major Subdominant Score
 #+BEGIN_SRC lilypond
        \score {
          <<
-           \new Devnull = "null" { \devNullMajorSubdominant }
-           \new Lyrics \lyricsto "null" \functionTheoryMajorSubdominant
-           \new AltLyrics \lyricsto "null" \commandsFunctionTheoryMajorSubdominant
+           \new Devnull = "null" { \devNullDurSubdominante }
+           \new Lyrics \lyricsto "null" \functionTheoryDurSubdominante
+           \new AltLyrics \lyricsto "null" \commandsFunctionTheoryDurSubdominante
          >>
          \header {
            title = ##f
-           subtitle = "Major Subdominant (Dur-Subdominante)"
+           subtitle = "Dur-Subdominante — Major Subdominant"
          }
          \layout { }
        }
 %     }
 #+END_SRC
-** Score: Minor Subdominant Symbols
-*** Devnull Minor Subdominant Symbols
+** Score: Moll-Subdominante — Minor Subdominant Symbols
+*** Devnull Moll-Subdominante — Minor Subdominant Symbols
 #+BEGIN_SRC lilypond
-  devNullMinorSubdominant = {
+  devNullMollSubdominante = {
     \repeat unfold 17 { c1 }
     \break
     \repeat unfold 6 { c1 }
     \break
     \repeat unfold 9 { c1 }
+    \break
+    \repeat unfold 2 { c1 }
   }
 #+END_SRC
-*** [Lyrics] Minor Subdominant Function Theory Symbols
+*** [Lyrics] Moll-Subdominante — Minor Subdominant Function Theory Symbols
 #+BEGIN_SRC lilypond
-functionTheoryMinorSubdominant = \lyricmode {
+functionTheoryMollSubdominante = \lyricmode {
   \set stanza = #"Function Theory:"
   \sm            |%1
   \s-tot         |%2
@@ -411,12 +439,15 @@ functionTheoryMinorSubdominant = \lyricmode {
   \s-si-fot      |%
 
   \s-si-eot      |%
+
+  \sP            |%
+  \sG            |%
 }
 #+END_SRC
 
-*** [Lyrics] Minor Subdominant Function Theory Commands
+*** [Lyrics] Moll-Subdominante — Minor Subdominant Function Theory Commands
 #+BEGIN_SRC lilypond
-commandsFunctionTheoryMinorSubdominant = \lyricmode {
+commandsFunctionTheoryMollSubdominante = \lyricmode {
 
   \set stanza = #"commands:"
   "\sm"       |%1
@@ -455,29 +486,32 @@ commandsFunctionTheoryMinorSubdominant = \lyricmode {
   "\s-si-tot" |%
   "\s-si-fot" |%
   "\s-si-eot" |%
+
+  "\sP"       |%
+  "\sG"       |%
 }
 #+END_SRC
 
-*** [Output] Minor Subdominant Score
+*** [Output] Moll-Subdominante — Minor Subdominant Score
 #+BEGIN_SRC lilypond
        \score {
          <<
-           \new Devnull = "null" { \devNullMinorSubdominant }
-           \new Lyrics \lyricsto "null" \functionTheoryMinorSubdominant
-           \new AltLyrics \lyricsto "null" \commandsFunctionTheoryMinorSubdominant
+           \new Devnull = "null" { \devNullMollSubdominante }
+           \new Lyrics \lyricsto "null" \functionTheoryMollSubdominante
+           \new AltLyrics \lyricsto "null" \commandsFunctionTheoryMollSubdominante
          >>
          \header {
            title = ##f
-           subtitle = "Minor Subdominant (Moll-Subdominante)"
+           subtitle = "Moll-Subdominante — Minor Subdominant"
          }
          \layout { }
        }
 %     }
 #+END_SRC
-** Score: Major Dominant Symbols
-*** Devnull Major Dominant Symbols
+** Score: Dur-Dominante — Major Dominant Symbols
+*** Devnull Dur-Dominante — Major Dominant Symbols
 #+BEGIN_SRC lilypond
-  devNullMajorDominant = {
+  devNullDurDominante = {
     \repeat unfold 21 { c1 }
     %\break
     \repeat unfold 3 { c1 }
@@ -491,11 +525,13 @@ commandsFunctionTheoryMinorSubdominant = \lyricmode {
     \repeat unfold 4 { c1 }
     \break
     \repeat unfold 1 { c1 }
+    \break
+    \repeat unfold 2 { c1 }
   }
 #+END_SRC
-*** [Lyrics] Major Dominant Function theory symbols
+*** [Lyrics] Dur-Dominante — Major Dominant Function theory symbols
 #+BEGIN_SRC lilypond
-functionTheoryMajorDominant = \lyricmode {
+functionTheoryDurDominante = \lyricmode {
   \set stanza = #"Function Theory:"
   \D             |%
   \D-tot         |%
@@ -566,12 +602,15 @@ functionTheoryMajorDominant = \lyricmode {
   \D-seven-backslash-ti    |%
 
   \DD-seven-fi |%
+
+  \Dp          |%
+  \Dg          |%
 }
 #+END_SRC
 
-*** [Lyrics] Major Dominant Commands
+*** [Lyrics] Dur-Dominante — Major Dominant Commands
 #+BEGIN_SRC lilypond
-commandsFunctionTheoryMajorDominant = \lyricmode {
+commandsFunctionTheoryDurDominante = \lyricmode {
 
   \set stanza = #"commands:"
   "\D"        |%
@@ -643,39 +682,44 @@ commandsFunctionTheoryMajorDominant = \lyricmode {
   "\D-seven-backslash-ti" |%
 
   "\DD-seven-fi"  |%
+
+  "\Dp"           |%
+  "\Dg"           |%
 }
 #+END_SRC
 
-*** [Output] Major Dominant Score
+*** [Output] Dur-Dominante — Major Dominant Score
 #+BEGIN_SRC lilypond
        \score {
          <<
-           \new Devnull = "null" { \devNullMajorDominant }
-           \new Lyrics \lyricsto "null" \functionTheoryMajorDominant
-           \new AltLyrics \lyricsto "null" \commandsFunctionTheoryMajorDominant
+           \new Devnull = "null" { \devNullDurDominante }
+           \new Lyrics \lyricsto "null" \functionTheoryDurDominante
+           \new AltLyrics \lyricsto "null" \commandsFunctionTheoryDurDominante
          >>
          \header {
            title = ##f
-           subtitle = "Major Dominant (Dur-Dominante)"
+           subtitle = "Dur-Dominante — Major Dominant"
          }
          \layout { }
        }
 %     }
 #+END_SRC
-** Score: Minor Dominant Symbols
-*** Devnull Minor Dominant Symbols
+** Score: Moll-Dominante — Minor Dominant Symbols
+*** Devnull Moll-Dominante — Minor Dominant Symbols
 #+BEGIN_SRC lilypond
-  devNullMinorDominant = {
+  devNullMollDominante = {
     \repeat unfold 13 { c1 }
     \break
     \repeat unfold 4 { c1 }
     %\break
     \repeat unfold 4 { c1 }
+    \break
+    \repeat unfold 2 { c1 }
   }
 #+END_SRC
-*** [Lyrics] Minor Dominant Function Theory Symbols
+*** [Lyrics] Moll-Dominante — Minor Dominant Function Theory Symbols
 #+BEGIN_SRC lilypond
-  functionTheoryMinorDominant = \lyricmode {
+  functionTheoryMollDominante = \lyricmode {
     \set stanza = #"Function Theory:"
     \dm            |%1
     \d-tot         |%2
@@ -701,12 +745,15 @@ commandsFunctionTheoryMajorDominant = \lyricmode {
     \d-si-fot      |%20
 
     \d-si-eot      |%21
+
+    \dP            |%
+    \dG            |%
   }
 #+END_SRC
 
-*** [Lyrics] Minor Dominant Function Theory Commands
+*** [Lyrics] Moll-Dominante — Minor Dominant Function Theory Commands
 #+BEGIN_SRC lilypond
-commandsFunctionTheoryMinorDominant = \lyricmode {
+commandsFunctionTheoryMollDominante = \lyricmode {
 
   \set stanza = #"commands:"
   "\dm"       |%1
@@ -732,20 +779,23 @@ commandsFunctionTheoryMinorDominant = \lyricmode {
   "\d-si-tot" |%19
   "\d-si-fot" |%20
   "\d-si-eot" |%21
+
+  "\dP"       |%
+  "\dG"       |%
 }
 #+END_SRC
 
-*** [Output] Minor Dominant Score
+*** [Output] Moll-Dominante — Minor Dominant Score
 #+BEGIN_SRC lilypond
        \score {
          <<
-           \new Devnull = "null" { \devNullMinorDominant }
-           \new Lyrics \lyricsto "null" \functionTheoryMinorDominant
-           \new AltLyrics \lyricsto "null" \commandsFunctionTheoryMinorDominant
+           \new Devnull = "null" { \devNullMollDominante }
+           \new Lyrics \lyricsto "null" \functionTheoryMollDominante
+           \new AltLyrics \lyricsto "null" \commandsFunctionTheoryMollDominante
          >>
          \header {
            title = ##f
-           subtitle = "Minor Dominant (Moll-Dominante)"
+           subtitle = "Moll-Dominante — Minor Dominant"
          }
          \layout { }
        }

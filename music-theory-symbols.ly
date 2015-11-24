@@ -1,5 +1,5 @@
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%%%%%%%%%%%%%%%%%% MAJOR TONIC %%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%% Major Tonic %%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 % * Tonic (major)
 % ** root pos.
@@ -621,9 +621,34 @@ T-si-eot = \markup {
 % ***** scale degree theory
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%%%%%%%%%%%%%%%% MAJOR SUBDOMINANT %%%%%%%%%%%%%%%
+%%%%%%%%%%%% Dur-Tonika-Moll-Parallele %%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-% * Subdominant (major)
+% * Dur-Tonioka-Moll-Parallele — Tonic parallel
+% ** root pos.
+% *** 3rd, 5th, or 8th on top (unspecified)
+% **** closed, open, or mixed pos. (unspecified)
+% ***** function theory
+Tp = \markup { Tp }
+% ***** scale degree theory
+vi = \markup { vi }
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%% Dur-Tonika-Moll-Gegenklang %%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% * Dur-Tonika-Moll-Gegenklang — Tonic counter parallel/Mediant
+% ** root pos.
+% *** 3rd, 5th, or 8th on top (unspecified)
+% **** closed, open, or mixed pos. (unspecified)
+% ***** function theory
+Tg = \markup { Tg }
+% ***** scale degree theory
+iii = \markup { iii }
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%% Dur-Subdominante %%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% * Dur-Subdominante – Major Subdominant
 % ** root pos.
 % *** 3rd, 5th, or 8th on top (unspecified)
 % **** closed, open, or mixed pos. (unspecified)
@@ -845,7 +870,6 @@ S-four-three =  \markup {
     }
   }
 }
-
 % ***** scale degree theory
 
 % * Subdominant 6 (major)
@@ -859,6 +883,43 @@ S-six =  \markup {
     \super {
       \smaller
       6
+    }
+  }
+}
+% ***** scale degree theory
+
+% * Neapolitan 6 (major)
+% * root pos.
+% *** 3rd, 5th, or 8th on top (unspecified)
+% **** closed, open, or mixed pos. (unspecified)
+% ***** function theory
+N-six =  \markup {
+  \concat {
+    N
+    \super {
+      \smaller
+      6
+    }
+  }
+}
+% ***** scale degree theory
+
+
+% * Subdominant 6-5 (major)
+% * root pos.
+% *** 3rd, 5th, or 8th on top (unspecified)
+% **** closed, open, or mixed pos. (unspecified)
+% ***** function theory
+S-six-five =  \markup {
+  \concat {
+    S
+    \super {
+      \smaller 6
+      \hspace #0.25
+      \raise #0.5
+      \draw-line #'(1 . 0)
+      \hspace #0.25
+      \smaller 5
     }
   }
 }
@@ -895,23 +956,6 @@ S-sixfour-fivethree =  \markup {
     }
   }
 }
-% ***** scale degree theory
-
-% * Subdominant 6 / Neapolitan 6 (major)
-% * root pos.
-% *** 3rd, 5th, or 8th on top (unspecified)
-% **** closed, open, or mixed pos. (unspecified)
-% ***** function theory
-N-six =  \markup {
-  \concat {
-    N
-    \super {
-      \smaller
-      6
-    }
-  }
-}
-
 % ***** scale degree theory
 
 % * Subdominant 9-8 (major)
@@ -1107,11 +1151,34 @@ S-si-eot = \markup {
 }
 % ***** scale degree theory
 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%% Dur-Subdominant-Moll-Parallele %%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% * Dur-Subdominant-Moll-Parallele — Supertonic
+% ** root pos.
+% *** 3rd, 5th, or 8th on top (unspecified)
+% **** closed, open, or mixed pos. (unspecified)
+% ***** function theory
+Sp = \markup { Sp }
+% ***** scale degree theory
+ii = \markup { ii }
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%%%%%%%%%%%%%%%%% MAJOR DOMINANT %%%%%%%%%%%%%%%%%
+%%%%%%%%% Dur-Subdominant-Moll-Gegenklang %%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-% * Dominant (major)
+% * Dur-Subdominant-Moll-Gegenklang — Submediant
+% ** root pos.
+% *** 3rd, 5th, or 8th on top (unspecified)
+% **** closed, open, or mixed pos. (unspecified)
+% ***** function theory
+Sg = \markup { Sg }
+% ***** scale degree theory
+%vi = \markup { vi }
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%% DUR-DOMINANTe %%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% * Dur-Dominante — Major Dominant
 % ** root pos.
 % *** 3rd, 5th, or 8th on top (unspecified)
 % **** closed, open, or mixed pos. (unspecified)
@@ -2297,12 +2364,34 @@ D-seven-backslash-ti = \markup {
 }
 % ***** scale degree theory
 
-
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%% Dur-Dominant-Moll-Parallele %%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% * Dur-Dominant-Moll-Parallele — Mediant
+% ** root pos.
+% *** 3rd, 5th, or 8th on top (unspecified)
+% **** closed, open, or mixed pos. (unspecified)
+% ***** function theory
+Dp = \markup { Dp }
+% ***** scale degree theory
+%iii = \markup { iii }
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%%%%%%%%%%%%%%%%%% MINOR TONIC %%%%%%%%%%%%%%%%%%%
+%%%%%%%%%% Dur-Dominant-Moll-Gegenklang %%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-% * tonic (minor)
+% * Dur-Dominant-Moll-Gegenklang
+% ** root pos.
+% *** 3rd, 5th, or 8th on top (unspecified)
+% **** closed, open, or mixed pos. (unspecified)
+% ***** function theory
+Dg = \markup { Dg }
+% ***** scale degree theory
+%viim = \markup { vi }
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%% Moll-Tonika %%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% * Moll-Tonika — Minor Tonic
 % ** root pos.
 % *** 3rd, 5th or 8th on top (unspecified)
 % **** closed, open, or mixed pos. (unspecified)
@@ -2788,10 +2877,37 @@ t-si-eot = \markup {
 }
 % ***** scale degree theory
 
+
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%%%%%%%%%%%%%%%% MINOR SUBDOMINANT %%%%%%%%%%%%%%%
+%%%%%%%%%%% Moll-Tonika-Dur-Parallele %%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-% * subdominant (minor)
+% * Moll-Tonika-Dur-Parallele — Major Tonic
+% ** root pos.
+% *** 3rd, 5th, or 8th on top (unspecified)
+% **** closed, open, or mixed pos. (unspecified)
+% ***** function theory
+tP = \markup { tP }
+% ***** scale degree theory
+%I = \markup { I }
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%% Moll-Tonika-Dur-Gegenklang %%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% * Moll-Tonika Dur-Gegenklang
+% ** root pos.
+% *** 3rd, 5th, or 8th on top (unspecified)
+% **** closed, open, or mixed pos. (unspecified)
+% ***** function theory
+tG = \markup { tG }
+% ***** scale degree theory
+bVI = \markup { \smaller \raise #0.5 {\flat}VI }
+
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%% Moll-Subdominante %%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% * Moll-Subdominante – Minor Subdominant
 % ** root pos.
 % *** 3rd, 5th, or 8th on top (unspecified)
 % **** closed, open, or mixed pos. (unspecified)
@@ -3382,11 +3498,34 @@ s-si-eot = \markup {
 }
 % ***** scale degree theory
 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%% Moll-Subdominant-Dur-Parallele %%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% * Moll-Subdominant-Dur-Parallele — Subdominant
+% ** root pos.
+% *** 3rd, 5th, or 8th on top (unspecified)
+% **** closed, open, or mixed pos. (unspecified)
+% ***** function theory
+sP = \markup { sP }
+% ***** scale degree theory
+%IV = \markup { IV }
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%%%%%%%%%%%%%%%%% MINOR DOMINANT %%%%%%%%%%%%%%%%%
+%%%%%%%%% Moll-Subdominant-Dur-Gegenklang %%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-% * dominant (minor)
+% * Moll-Subdominant Dur-Gegenklang
+% ** root pos.
+% *** 3rd, 5th, or 8th on top (unspecified)
+% **** closed, open, or mixed pos. (unspecified)
+% ***** function theory
+sG = \markup { sG }
+% ***** scale degree theory
+bII = \markup { \smaller \raise #0.5 {\flat}II }
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%% Moll Dominante %%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% * Moll-Dominante — Minor Dominant
 % ** root pos.
 % *** 3rd, 5th, or 8th on top (unspecified)
 % **** closed, open, or mixed pos. (unspecified)
@@ -3715,6 +3854,31 @@ d-si-eot = \markup {
   }
 }
 % ***** scale degree theory
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%% Moll-Dominante-Dur-Parallele %%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% * Moll-Dominante-Dur-Parallele — Mediant
+% ** root pos.
+% *** 3rd, 5th, or 8th on top (unspecified)
+% **** closed, open, or mixed pos. (unspecified)
+% ***** function theory
+dP = \markup { dP }
+% ***** scale degree theory
+%iii = \markup { iii }
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%% Moll-Dominant-Dur-Gegenklang %%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% * Moll-Dominant Dur-Gegenklang — Major Tonic
+% ** root pos.
+% *** 3rd, 5th, or 8th on top (unspecified)
+% **** closed, open, or mixed pos. (unspecified)
+% ***** function theory
+dG = \markup { dG }
+% ***** scale degree theory
+%I = \markup { I }
+
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%% PROLONGATIONS %%%%%%%%%%%%%%%%%
