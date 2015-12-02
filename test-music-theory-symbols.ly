@@ -242,9 +242,9 @@ commandsFunctionTheoryMollTonika = \lyricmode {
 %     }
 
 devNullDurSubdominante = {
-  \repeat unfold 20 { c1 }
+  \repeat unfold 22 { c1 }
   \break
-  \repeat unfold 8 { c1 }
+  \repeat unfold 14 { c1 }
   \break
   \repeat unfold 2 { c1 }
 }
@@ -268,6 +268,8 @@ functionTheoryDurSubdominante = \lyricmode {
   \S-four-three  |%14
   \S-six         |%
   \N-six         |%
+  \Aj            |%
+  \S-sixfive     |%
   \S-six-five    |%
   \S-sixfour-fivethree |%
   \S-nine-eight  |%
@@ -278,10 +280,19 @@ functionTheoryDurSubdominante = \lyricmode {
   \S-fi-fot      |%
   \S-fi-eot      |%
 
+  \Aj-fi         |%
+  \S-sixfive-fi  |%
+
   \S-si          |%
   \S-si-tot      |%
   \S-si-fot      |%
   \S-si-eot      |%
+
+  \Aj-si         |%
+  \S-sixfive-si  |%
+
+  \Aj-ti         |%
+  \S-sixfive-ti  |%
 
   \Sp            |%
   \Sg            |%
@@ -307,6 +318,8 @@ commandsFunctionTheoryDurSubdominante = \lyricmode {
   "\S-four-three"  |%14
   "\S-six"  |%
   "\N-six"  |%
+  "\Aj"     |%
+  "\S-sixfive" |%
   "\S-six-five"  |%
   "\S-sixfour-fivethree" |%
   "\S-nine-eight" |%
@@ -317,10 +330,19 @@ commandsFunctionTheoryDurSubdominante = \lyricmode {
   "\S-fi-fot" |%
   "\S-fi-eot" |%
 
+  "\Aj-fi"     |%
+  "\S-sixfive-fi" |%
+
   "\S-si"     |%
   "\S-si-tot" |%
   "\S-si-fot" |%
   "\S-si-eot" |%
+
+  "\Aj-si"     |%
+  "\S-sixfive-si" |%
+
+  "\Aj-ti"    |%
+  "\S-sixfive-ti" |%
 
   "\Sp"       |%
   "\Sg"       |%
@@ -341,13 +363,13 @@ commandsFunctionTheoryDurSubdominante = \lyricmode {
 %     }
 
 devNullMollSubdominante = {
-  \repeat unfold 17 { c1 }
+  \repeat unfold 20 { c1 }
   \break
   \repeat unfold 6 { c1 }
   \break
   \repeat unfold 9 { c1 }
   \break
-  \repeat unfold 2 { c1 }
+  \repeat unfold 8 { c1 }
 }
 
 functionTheoryMollSubdominante = \lyricmode {
@@ -371,6 +393,8 @@ functionTheoryMollSubdominante = \lyricmode {
   \s-four-three  |%
   \s-six         |%
   \s-sixflat     |%
+  \aj            |%
+  \s-sixfive     |%
   \s-six-five    |%
   \s-flatsix-five |%
   \s-sixflat-five |%
@@ -382,13 +406,20 @@ functionTheoryMollSubdominante = \lyricmode {
   \s-fi-tot      |%
   \s-fi-fot      |%
   \s-fi-eot      |%
+  \aj-fi         |%
+  \s-sixfive-fi  |%
   \s-nine-eight-fi |%
 
   \s-si          |%
+  \aj-si         |%
+  \s-sixfive-si  |%
   \s-si-tot      |%
   \s-si-fot      |%
 
   \s-si-eot      |%
+
+  \aj-ti         |%
+  \s-sixfive-ti  |%
 
   \sP            |%
   \sG            |%
@@ -416,6 +447,8 @@ commandsFunctionTheoryMollSubdominante = \lyricmode {
   "\s-four-three" |%
   "\s-six"        |%
   "\s-sixflat"    |%
+  "\aj"           |%
+  "\s-sixfive"    |%
   "\s-six-five"   |%
   "\s-flatsix-five" |%
   "\s-sixflat-five" |%
@@ -427,12 +460,19 @@ commandsFunctionTheoryMollSubdominante = \lyricmode {
   "\s-fi-tot" |%
   "\s-fi-fot" |%
   "\s-fi-eot" |%
+  "\aj-fi"    |%
+  "\s-sixfive-fi" |%
   "\s-nine-eight-fi"  |%
 
   "\s-si"     |%
+  "\aj-si"    |%
+  "\s-sixfive-si" |%
   "\s-si-tot" |%
   "\s-si-fot" |%
   "\s-si-eot" |%
+
+  "\aj-ti"    |%
+  "\s-sixfive-ti" |%
 
   "\sP"       |%
   "\sG"       |%
@@ -453,9 +493,7 @@ commandsFunctionTheoryMollSubdominante = \lyricmode {
 %     }
 
 devNullDurDominante = {
-  \repeat unfold 21 { c1 }
-  %\break
-  \repeat unfold 3 { c1 }
+  \repeat unfold 34 { c1 }
   \break
   \repeat unfold 9 { c1 }
   \break
@@ -494,10 +532,20 @@ functionTheoryDurDominante = \lyricmode {
   \D-eot-mp      |%
 
   \D-four-three  |%
+  \D-five-six-seven |%
+  \D-fivefour-six-seventhree |%
+  \D-fivefour-sixthree-seven |%
   \D-six-five    |%
   \D-sixfour-fivethree |%
+  \D-sevenfour-three |%
+  \D-eightfour-three-seven |%
+  \D-eightsix-sevenfive |%
+  \D-eightfour-two-seventhree |%
+  \D-eightsixfour-fivethree-seven |%
+  \D-eightsixfour-two-sevenfivethree |%
   \D-nine-eight  |%
   \D-ninefour-eightthree |%
+  \D-nineseven-eightsix-sevenfive |%
 
   \D-fi          |%
   \D-fi-tot      |%
@@ -571,10 +619,20 @@ commandsFunctionTheoryDurDominante = \lyricmode {
   "\D-eot-mp" |%
 
   "\D-four-three"  |%
+  "\D-five-six-seven" |%
+  "\D-fivefour-six-seventhree" |%
+  "\D-fivefour-sixthree-seven" |%
   "\D-six-five"    |%
   "\D-sixfour-fivethree" |%
+  "\D-sevenfour-three" |%
+  "\D-eightfour-three-seven" |%
+  "\D-eightsix-sevenfive" |%
+  "\D-eightfour-two-seventhree" |%
+  "\D-eightsixfour-fivethree-seven" |%
+  "\D-eightsixfour-two-sevenfivethree" |%
   "\D-nine-eight"  |%
   "\D-ninefour-eightthree" |%
+  "\D-nineseven-eightsix-sevenfive" |%
 
   "\D-fi"     |%
   "\D-fi-tot" |%
