@@ -925,7 +925,7 @@ S-six-five =  \markup {
 }
 % ***** scale degree theory
 
-% * Subominant 6-5/4-3 (major)
+% * Subdominant 6-5/4-3 (major)
 % * root pos.
 % *** 3rd, 5th, or 8th on top (unspecified)
 % **** closed, open, or mixed pos. (unspecified)
@@ -951,6 +951,31 @@ S-sixfour-fivethree =  \markup {
           \draw-line #'(1 . 0)
           %\hspace #0.25
           \smaller 3
+        }
+      }
+    }
+  }
+}
+% ***** scale degree theory
+
+% * Subdominant 6/5 (major)
+% * root pos.
+% *** 3rd, 5th, or 8th on top (unspecified)
+% **** closed, open, or mixed pos. (unspecified)
+% ***** function theory
+Aj =  \markup { Aj }
+
+S-sixfive =  \markup {
+  \concat {
+    S
+    \super {
+      \center-column {
+        \line {
+          \smaller 6
+        }
+        \raise #1.5
+        \line {
+          \smaller 5
         }
       }
     }
@@ -1081,6 +1106,34 @@ S-fi-eot = \markup {
 }
 % ***** scale degree theory
 
+% * Subdominant 6/5 (major)
+% ** 1st inv.
+% *** 3rd, 5th or 8th on top (unspecified)
+% **** closed, open, or mixed pos. (unspecified)
+% ***** function theory
+Aj-fi = \markup {
+  \center-column {
+    Aj
+    \raise #1.8
+    \magnify #0.6 { 3 }
+  }
+}
+S-sixfive-fi = \markup\concat {
+  \center-column {
+    S
+    \raise #1.8
+    \magnify #0.6 { 3 }
+  }
+  \super {
+    \center-column {
+      \line { \smaller 6 }
+      \raise #1.5
+      \line { \smaller 5 }
+    }
+  }
+}
+% ***** scale degree theory
+
 % * Subdominant (major)
 % ** 2nd inv.
 % *** 3rd, 5th or 8th on top (unspecified)
@@ -1151,6 +1204,55 @@ S-si-eot = \markup {
 }
 % ***** scale degree theory
 
+% * Subdominant 6/5 (major)
+% ** 2nd inv.
+% *** 3rd, 5th or 8th on top (unspecified)
+% **** closed, open, or mixed pos. (unspecified)
+% ***** function theory
+Aj-si = \markup {
+  \center-column {
+    Aj
+    \raise #1.8
+    \magnify #0.6 { 5 }
+  }
+}
+S-sixfive-si = \markup\concat {
+  \center-column {
+    S
+    \raise #1.8
+    \magnify #0.6 { 5 }
+  }
+  \super { \smaller 6 }
+}
+% ***** scale degree theory
+
+% * Subdominant 6/5 (major)
+% ** 3rd inv.
+% *** 3rd, 5th or 8th on top (unspecified)
+% **** closed, open, or mixed pos. (unspecified)
+% ***** function theory
+Aj-ti = \markup {
+  \center-column {
+    Aj
+    \raise #1.8
+    \magnify #0.6 { 6 }
+  }
+}
+S-sixfive-ti = \markup\concat {
+  \center-column {
+    S
+    \raise #1.8
+    \magnify #0.6 { 6 }
+  }
+  \super {
+    \hspace #0.1
+    %\lower #1.05
+    \smaller 5
+  }
+}
+% ***** scale degree theory
+
+
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%% Dur-Subdominant-Moll-Parallele %%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -1176,7 +1278,7 @@ Sg = \markup { Sg }
 %vi = \markup { vi }
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%%%%%%%%%%%%%%%%%% DUR-DOMINANTe %%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%% Dur-Dominante %%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 % * Dur-Dominante — Major Dominant
 % ** root pos.
@@ -1552,7 +1654,107 @@ D-four-three =  \markup {
     }
   }
 }
+% ***** scale degree theory
 
+% * dominant 5-6-7 (major)
+% * root pos.
+% *** 3rd, 5th, or 8th on top (unspecified)
+% **** closed, open, or mixed pos. (unspecified)
+% ***** function theory
+D-five-six-seven =  \markup {
+  \concat {
+    D
+    \super {
+      \smaller 5
+      \hspace #0.25
+      \raise #0.5
+      \draw-line #'(0.5 . 0)
+      \hspace #0.25
+      \smaller 6
+      \hspace #0.25
+      \raise #0.5
+      \draw-line #'(0.5 . 0)
+      \hspace #0.25
+      \smaller 7
+    }
+  }
+}
+% ***** scale degree theory
+
+% * Dominant 5-6-7/4--3 (major)
+% * root pos.
+% *** 3rd, 5th, or 8th on top (unspecified)
+% **** closed, open, or mixed pos. (unspecified)
+% ***** function theory
+D-fivefour-six-seventhree =  \markup {
+  \concat {
+    D
+    \super {
+      \column {
+        \line {
+          \smaller 5
+          %\hspace #0.25
+          \raise #0.5
+          \draw-line #'(0.5 . 0)
+          %\hspace #0.25
+          \smaller 6
+          %\hspace #0.25
+          \raise #0.5
+          \draw-line #'(0.5 . 0)
+          %\hspace #0.25
+          \smaller 7
+        }
+        \raise #1.5
+        \line {
+          \smaller 4
+          %\hspace #0.25
+          \raise #0.5
+          \draw-line #'(3.1 . 0)
+          %\hspace #0.25
+          \smaller 3
+        }
+      }
+    }
+  }
+}
+% ***** scale degree theory
+
+% * Dominant 5-6-7/4-3 (major)
+% * root pos.
+% *** 3rd, 5th, or 8th on top (unspecified)
+% **** closed, open, or mixed pos. (unspecified)
+% ***** function theory
+D-fivefour-sixthree-seven =  \markup {
+  \concat {
+    D
+    \super {
+      \column {
+        \line {
+          \smaller 5
+          %\hspace #0.25
+          \raise #0.5
+          \draw-line #'(0.5 . 0)
+          %\hspace #0.25
+          \smaller 6
+          %\hspace #0.25
+          \raise #0.5
+          \draw-line #'(0.5 . 0)
+          %\hspace #0.25
+          \smaller 7
+        }
+        \raise #1.5
+        \line {
+          \smaller 4
+          %\hspace #0.25
+          \raise #0.5
+          \draw-line #'(0.5 . 0)
+          %\hspace #0.25
+          \smaller 3
+        }
+      }
+    }
+  }
+}
 % ***** scale degree theory
 
 % * dominant 6-5 (major)
@@ -1608,6 +1810,230 @@ D-sixfour-fivethree =  \markup {
 }
 % ***** scale degree theory
 
+% * Dominant 7/4-3 (major)
+% * root pos.
+% *** 3rd, 5th, or 8th on top (unspecified)
+% **** closed, open, or mixed pos. (unspecified)
+% ***** function theory
+D-sevenfour-three =  \markup {
+  \concat {
+    D
+    \super {
+      \column {
+        \line {
+          \smaller 7
+        }
+        \raise #1.5
+        \line {
+          \smaller 4
+          %\hspace #0.25
+          \raise #0.5
+          \draw-line #'(1 . 0)
+          %\hspace #0.25
+          \smaller 3
+        }
+      }
+    }
+  }
+}
+% ***** scale degree theory
+
+% * Dominant 8--7/4-3 (major)
+% * root pos.
+% *** 3rd, 5th, or 8th on top (unspecified)
+% **** closed, open, or mixed pos. (unspecified)
+% ***** function theory
+D-eightfour-three-seven =  \markup {
+  \concat {
+    D
+    \super {
+      \column {
+        \line {
+          \smaller 8
+          %\hspace #0.25
+          \raise #0.5
+          \draw-line #'(3.1 . 0)
+          %\hspace #0.25
+          \smaller 7
+        }
+        \raise #1.5
+        \line {
+          \smaller 4
+          %\hspace #0.25
+          \raise #0.5
+          \draw-line #'(1 . 0)
+          %\hspace #0.25
+          \smaller 3
+        }
+      }
+    }
+  }
+}
+% ***** scale degree theory
+
+% * Dominant 8-7/6-5 (major)
+% * root pos.
+% *** 3rd, 5th, or 8th on top (unspecified)
+% **** closed, open, or mixed pos. (unspecified)
+% ***** function theory
+D-eightsix-sevenfive =  \markup {
+  \concat {
+    D
+    \super {
+      \center-column {
+        \line {
+          \smaller 8
+          %\hspace #0.25
+          \raise #0.5
+          \draw-line #'(1 . 0)
+          %\hspace #0.25
+          \smaller 7
+        }
+        \raise #1.5
+        \line {
+          \smaller 6
+          %\hspace #0.25
+          \raise #0.5
+          \draw-line #'(1 . 0)
+          %\hspace #0.25
+          \smaller 5
+        }
+      }
+    }
+  }
+}
+% ***** scale degree theory
+
+% * Dominant 8--7/4-2-3 (major)
+% * root pos.
+% *** 3rd, 5th, or 8th on top (unspecified)
+% **** closed, open, or mixed pos. (unspecified)
+% ***** function theory
+D-eightfour-two-seventhree =  \markup {
+  \concat {
+    D
+    \super {
+      \column {
+        \line {
+          \smaller 8
+          %\hspace #0.25
+          \raise #0.5
+          \draw-line #'(3.1 . 0)
+          %\hspace #0.25
+          \smaller 7
+        }
+        \raise #1.5
+        \line {
+          \smaller 4
+          %\hspace #0.25
+          \raise #0.5
+          \draw-line #'(0.5 . 0)
+          %\hspace #0.25
+          \smaller 2
+          %\hspace #0.25
+          \raise #0.5
+          \draw-line #'(0.5 . 0)
+          %\hspace #0.25
+          \smaller 3
+        }
+      }
+    }
+  }
+}
+% ***** scale degree theory
+
+% * Dominant 8--7/6--5/4-2-3 (major)
+% * root pos.
+% *** 3rd, 5th, or 8th on top (unspecified)
+% **** closed, open, or mixed pos. (unspecified)
+% ***** function theory
+D-eightsixfour-two-sevenfivethree =  \markup {
+  \concat {
+    D
+    \super {
+      \column {
+        \raise #1
+        \line {
+          \smaller 8
+          %\hspace #0.25
+          \raise #0.5
+          \draw-line #'(3.1 . 0)
+          %\hspace #0.25
+          \smaller 7
+        }
+        \raise #2.5
+        \line {
+          \smaller 6
+          %\hspace #0.25
+          \raise #0.5
+          \draw-line #'(3.1 . 0)
+          %\hspace #0.25
+          \smaller 5
+        }
+        \raise #4
+        \line {
+          \smaller 4
+          %\hspace #0.25
+          \raise #0.5
+          \draw-line #'(0.5 . 0)
+          %\hspace #0.25
+          \smaller 2
+          %\hspace #0.25
+          \raise #0.5
+          \draw-line #'(0.5 . 0)
+          %\hspace #0.25
+          \smaller 3
+        }
+      }
+    }
+  }
+}
+% ***** scale degree theory
+
+% * Dominant 8--7/6-5/4-3 (major)
+% * root pos.
+% *** 3rd, 5th, or 8th on top (unspecified)
+% **** closed, open, or mixed pos. (unspecified)
+% ***** function theory
+D-eightsixfour-fivethree-seven =  \markup {
+  \concat {
+    D
+    \super {
+      \column {
+        \raise #1
+        \line {
+          \smaller 8
+          %\hspace #0.25
+          \raise #0.5
+          \draw-line #'(3.1 . 0)
+          %\hspace #0.25
+          \smaller 7
+        }
+        \raise #2.5
+        \line {
+          \smaller 6
+          %\hspace #0.25
+          \raise #0.5
+          \draw-line #'(1 . 0)
+          %\hspace #0.25
+          \smaller 5
+        }
+        \raise #4
+        \line {
+          \smaller 4
+          %\hspace #0.25
+          \raise #0.5
+          \draw-line #'(1 . 0)
+          %\hspace #0.25
+          \smaller 3
+        }
+      }
+    }
+  }
+}
+% ***** scale degree theory
+
+
 % * Dominant 9-8 (major)
 % * root pos.
 % *** 3rd, 5th, or 8th on top (unspecified)
@@ -1654,6 +2080,47 @@ D-ninefour-eightthree =  \markup {
           \draw-line #'(1 . 0)
           %\hspace #0.25
           \smaller 3
+        }
+      }
+    }
+  }
+}
+% ***** scale degree theory
+
+% * Dominant 9-8-7/7-6-5 (major)
+% * root pos.
+% *** 3rd, 5th, or 8th on top (unspecified)
+% **** closed, open, or mixed pos. (unspecified)
+% ***** function theory
+D-nineseven-eightsix-sevenfive =  \markup {
+  \concat {
+    D
+    \super {
+      \center-column {
+        \line {
+          \smaller 9
+          %\hspace #0.25
+          \raise #0.5
+          \draw-line #'(1 . 0)
+          %\hspace #0.25
+          \smaller 8
+          \raise #0.5
+          \draw-line #'(1 . 0)
+          %\hspace #0.25
+          \smaller 7
+        }
+        \raise #1.5
+        \line {
+          \smaller 7
+          %\hspace #0.25
+          \raise #0.5
+          \draw-line #'(1 . 0)
+          %\hspace #0.25
+          \smaller 6
+          \raise #0.5
+          \draw-line #'(1 . 0)
+          %\hspace #0.25
+          \smaller 5
         }
       }
     }
@@ -2995,6 +3462,29 @@ s-four-three =  \markup {
 }
 % ***** scale degree theory
 
+% * subdominant 6/5 (minor)
+% * root pos.
+% *** 3rd, 5th, or 8th on top (unspecified)
+% **** closed, open, or mixed pos. (unspecified)
+% ***** function theory
+aj = \markup { aj }
+s-sixfive =  \markup {
+  \concat {
+    s
+    \super {
+      \center-column {
+        \line {
+          \smaller 6
+        }
+        \raise #1.5
+        \line {
+          \smaller 5
+        }
+      }
+    }
+  }
+}
+
 % * subdominant 9-8/4-3 (minor)
 % * root pos.
 % *** 3rd, 5th, or 8th on top (unspecified)
@@ -3217,11 +3707,12 @@ s-tot-cp = \markup {
 s-tot-cp-eot-op = \markup {
   \raise #2.95
   \center-column {
-    \general-align #Y #2.0
+    \general-align #Y #4.05
+    %\lower #1.65
     \magnify #0.4 { 3c }
     s
   }
-  \raise #1.95
+  \raise #1.3
   \center-column {
     \magnify #0.4 { 8o }
     \raise #1.8
@@ -3253,11 +3744,11 @@ s-tot-op = \markup {
 s-tot-op-eot-cp = \markup {
   \raise #2.95
   \center-column {
-    \general-align #Y #2.0
+    \general-align #Y #4.05
     \magnify #0.4 { 3o }
     s
   }
-  \raise #1.95
+  \raise #1.3
   \center-column {
     \magnify #0.4 { 8c }
     \raise #1.8
@@ -3346,13 +3837,41 @@ s-fot-mp = \markup {
 % *** 3rd, 5th or 8th on top (unspecified)
 % **** closed, open, or mixed pos. (unspecified)
 % ***** function theory
-s-fi = \markup\concat {
+s-fi = \markup {
   %\raise #2.425
   \center-column {
     s
     %\general-align #Y #-2.2
     \raise #1.8
     \magnify #0.6 { 3 }
+  }
+}
+% ***** scale degree theory
+
+% * subdominant 6/5 (minor)
+% ** 1st inv.
+% *** 3rd, 5th or 8th on top (unspecified)
+% **** closed, open, or mixed pos. (unspecified)
+% ***** function theory
+aj-fi = \markup {
+  \center-column {
+    aj
+    \raise #1.8
+    \magnify #0.6 { 3 }
+  }
+}
+s-sixfive-fi = \markup\concat {
+  \center-column {
+    s
+    \raise #1.8
+    \magnify #0.6 { 3 }
+  }
+  \super {
+    \center-column {
+      \line { \smaller 6 }
+      \raise #1.5
+      \line { \smaller 5 }
+    }
   }
 }
 % ***** scale degree theory
@@ -3444,6 +3963,30 @@ s-si = \markup {
 }
 % ***** scale degree theory
 
+% * subdominant 6/5 (minor)
+% ** 2nd inv.
+% *** 3rd, 5th or 8th on top (unspecified)
+% **** closed, open, or mixed pos. (unspecified)
+% ***** function theory
+aj-si = \markup {
+  \center-column {
+    aj
+    \raise #1.8
+    \magnify #0.6 { 5 }
+  }
+}
+s-sixfive-si = \markup\concat {
+  \center-column {
+    s
+    \raise #1.8
+    \magnify #0.6 { 5 }
+  }
+  \super {
+    \smaller 6
+  }
+}
+% ***** scale degree theory
+
 % * subdominant (minor)
 % ** 2nd inv.
 % *** 3rd on top
@@ -3494,6 +4037,32 @@ s-si-eot = \markup {
     %\general-align #Y #-2.2
     \raise #1.8
     \magnify #0.6 { 5 }
+  }
+}
+% ***** scale degree theory
+
+% * subdominant (minor)
+% ** 3rd inv.
+% *** 3rd, 5th or 8th on top (unspecified)
+% **** closed, open, or mixed pos. (unspecified)
+% ***** function theory
+aj-ti = \markup {
+  \center-column {
+    aj
+    \raise #1.8
+    \magnify #0.6 { 6 }
+  }
+}
+s-sixfive-ti = \markup\concat {
+  \center-column {
+    s
+    \raise #1.8
+    \magnify #0.6 { 6 }
+  }
+  \super {
+    \hspace #0.1
+    %\lower #1.05
+    \smaller 5
   }
 }
 % ***** scale degree theory
