@@ -367,7 +367,7 @@ devNullMollSubdominante = {
   \break
   \repeat unfold 6 { c1 }
   \break
-  \repeat unfold 9 { c1 }
+  \repeat unfold 10 { c1 }
   \break
   \repeat unfold 8 { c1 }
 }
@@ -409,6 +409,7 @@ functionTheoryMollSubdominante = \lyricmode {
   \aj-fi         |%
   \s-sixfive-fi  |%
   \s-nine-eight-fi |%
+  \aj-sixsharponesharp-fi |%
 
   \s-si          |%
   \aj-si         |%
@@ -463,6 +464,7 @@ commandsFunctionTheoryMollSubdominante = \lyricmode {
   "\aj-fi"    |%
   "\s-sixfive-fi" |%
   "\s-nine-eight-fi"  |%
+  "\aj-sixsharponesharp-fi"
 
   "\s-si"     |%
   "\aj-si"    |%
@@ -504,6 +506,10 @@ devNullDurDominante = {
   \repeat unfold 4 { c1 }
   \break
   \repeat unfold 1 { c1 }
+  \break
+  \repeat unfold 4 { c1 }
+  \break
+  \repeat unfold 7 { c1 }
   \break
   \repeat unfold 2 { c1 }
 }
@@ -588,7 +594,20 @@ functionTheoryDurDominante = \lyricmode {
   \D-seven-backslash-si    |%
   \D-seven-backslash-ti    |%
 
+  \DD          |%
+
+  \DD-seven    |%
   \DD-seven-fi |%
+  \DD-seven-si |%
+  \Fr-six      |%
+  \DD-seven-siflat |%
+  \DD-seven-ti |%
+
+  \DD-seven-backslash-si     |%
+  \It-six                    |%
+  \DD-seven-backslash-siflat |%
+  \Ge-six                    |%
+  \DD-nineflat-backslash-siflat |%
 
   \Dp          |%
   \Dg          |%
@@ -675,7 +694,20 @@ commandsFunctionTheoryDurDominante = \lyricmode {
   "\D-seven-backslash-si" |%
   "\D-seven-backslash-ti" |%
 
-  "\DD-seven-fi"  |%
+  "\DD"              |%
+
+  "\DD-seven"        |%
+  "\DD-seven-fi"     |%
+  "\DD-seven-si"     |%
+  "\Fr-six"          |%
+  "\DD-seven-siflat" |%
+  "\DD-seven-ti"     |%
+
+  "\DD-seven-backslash-si"        |%
+  "\It-six"                       |%
+  "\DD-seven-backslash-siflat"    |%
+  "\Ge-six"                       |%
+  "\DD-nineflat-backslash-siflat" |%
 
   "\Dp"           |%
   "\Dg"           |%

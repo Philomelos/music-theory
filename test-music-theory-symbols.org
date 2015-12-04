@@ -415,9 +415,11 @@ commandsFunctionTheoryDurSubdominante = \lyricmode {
     \break
     \repeat unfold 6 { c1 }
     \break
-    \repeat unfold 9 { c1 }
+    \repeat unfold 10 { c1 }
     \break
-    \repeat unfold 8 { c1 }
+    \repeat unfold 6 { c1 }
+    \break
+    \repeat unfold 2 { c1 }
   }
 #+END_SRC
 *** [Lyrics] Moll-Subdominante — Minor Subdominant Function Theory Symbols
@@ -459,6 +461,7 @@ functionTheoryMollSubdominante = \lyricmode {
   \aj-fi         |%
   \s-sixfive-fi  |%
   \s-nine-eight-fi |%
+  \aj-sixsharponesharp-fi |%
 
   \s-si          |%
   \aj-si         |%
@@ -516,6 +519,7 @@ commandsFunctionTheoryMollSubdominante = \lyricmode {
   "\aj-fi"    |%
   "\s-sixfive-fi" |%
   "\s-nine-eight-fi"  |%
+  "\aj-sixsharponesharp-fi"
 
   "\s-si"     |%
   "\aj-si"    |%
@@ -564,96 +568,113 @@ commandsFunctionTheoryMollSubdominante = \lyricmode {
     \break
     \repeat unfold 1 { c1 }
     \break
+    \repeat unfold 4 { c1 }
+    \break
+    \repeat unfold 7 { c1 }
+    \break
     \repeat unfold 2 { c1 }
   }
 #+END_SRC
 *** [Lyrics] Dur-Dominante — Major Dominant Function theory symbols
 #+BEGIN_SRC lilypond
-functionTheoryDurDominante = \lyricmode {
-  \set stanza = #"Function Theory:"
-  \D             |%
-  \D-tot         |%
-  \D-tot-cp      |%
-  \D-tot-op      |%
-  \D-tot-op-mp   |%
-  \D-tot-mp      |%
-  \D-fot         |%
-  \D-fot-cp      |%
-  \D-fot-cp-tot-mp |%
-  \D-fot-op      |%
-  \D-fot-mp      |%
-  \D-eot         |%
-  \D-eot-cp      |%
-  \D-eot-cp-tot-cp |%
-  \D-eot-cp-tot-op |%
-  \D-eot-cp-fi   |%
-  \D-eot-op      |%
-  \D-eot-op-tot-cp |%
-  \D-eot-op-tot-op |%
-  \D-eot-mp      |%
+  functionTheoryDurDominante = \lyricmode {
+    \set stanza = #"Function Theory:"
+    \D             |%
+    \D-tot         |%
+    \D-tot-cp      |%
+    \D-tot-op      |%
+    \D-tot-op-mp   |%
+    \D-tot-mp      |%
+    \D-fot         |%
+    \D-fot-cp      |%
+    \D-fot-cp-tot-mp |%
+    \D-fot-op      |%
+    \D-fot-mp      |%
+    \D-eot         |%
+    \D-eot-cp      |%
+    \D-eot-cp-tot-cp |%
+    \D-eot-cp-tot-op |%
+    \D-eot-cp-fi   |%
+    \D-eot-op      |%
+    \D-eot-op-tot-cp |%
+    \D-eot-op-tot-op |%
+    \D-eot-mp      |%
 
-  \D-four-three  |%
-  \D-five-six-seven |%
-  \D-fivefour-six-seventhree |%
-  \D-fivefour-sixthree-seven |%
-  \D-six-five    |%
-  \D-sixfour-fivethree |%
-  \D-sevenfour-three |%
-  \D-eightfour-three-seven |%
-  \D-eightsix-sevenfive |%
-  \D-eightfour-two-seventhree |%
-  \D-eightsixfour-fivethree-seven |%
-  \D-eightsixfour-two-sevenfivethree |%
-  \D-nine-eight  |%
-  \D-ninefour-eightthree |%
-  \D-nineseven-eightsix-sevenfive |%
+    \D-four-three  |%
+    \D-five-six-seven |%
+    \D-fivefour-six-seventhree |%
+    \D-fivefour-sixthree-seven |%
+    \D-six-five    |%
+    \D-sixfour-fivethree |%
+    \D-sevenfour-three |%
+    \D-eightfour-three-seven |%
+    \D-eightsix-sevenfive |%
+    \D-eightfour-two-seventhree |%
+    \D-eightsixfour-fivethree-seven |%
+    \D-eightsixfour-two-sevenfivethree |%
+    \D-nine-eight  |%
+    \D-ninefour-eightthree |%
+    \D-nineseven-eightsix-sevenfive |%
 
-  \D-fi          |%
-  \D-fi-tot      |%
-  \D-fi-fot      |%
-  \D-fi-eot      |%
+    \D-fi          |%
+    \D-fi-tot      |%
+    \D-fi-fot      |%
+    \D-fi-eot      |%
 
-  \D-nine-eight-fi  |%
+    \D-nine-eight-fi  |%
 
-  \D-si          |%
-  \D-si-tot      |%
-  \D-si-fot      |%
-  \D-si-eot      |%
+    \D-si          |%
+    \D-si-tot      |%
+    \D-si-fot      |%
+    \D-si-eot      |%
 
-  \D-seven             |%
-  \D-seven-tot         |%
-  \D-seven-tot-cp      |%
-  \D-seven-tot-op      |%
-  \D-seven-tot-mp      |%
-  \D-seven-fot         |%
-  \D-seven-fot-cp      |%
-  \D-seven-fot-op      |%
-  \D-seven-fot-mp      |%
+    \D-seven             |%
+    \D-seven-tot         |%
+    \D-seven-tot-cp      |%
+    \D-seven-tot-op      |%
+    \D-seven-tot-mp      |%
+    \D-seven-fot         |%
+    \D-seven-fot-cp      |%
+    \D-seven-fot-op      |%
+    \D-seven-fot-mp      |%
 
-  \D-seven-fi          |%
-  \D-seven-fi-fot      |%
-  \D-seven-fi-sot      |%
-  \D-seven-fi-eot      |%
+    \D-seven-fi          |%
+    \D-seven-fi-fot      |%
+    \D-seven-fi-sot      |%
+    \D-seven-fi-eot      |%
 
-  \D-seven-si          |%
-  \D-seven-si-tot      |%
-  \D-seven-si-sot      |%
-  \D-seven-si-eot      |%
+    \D-seven-si          |%
+    \D-seven-si-tot      |%
+    \D-seven-si-sot      |%
+    \D-seven-si-eot      |%
 
-  \D-seven-ti          |%
-  \D-seven-ti-tot      |%
-  \D-seven-ti-fot      |%
-  \D-seven-ti-eot      |%
+    \D-seven-ti          |%
+    \D-seven-ti-tot      |%
+    \D-seven-ti-fot      |%
+    \D-seven-ti-eot      |%
 
-  \D-seven-backslash-fi    |%
-  \D-seven-backslash-si    |%
-  \D-seven-backslash-ti    |%
+    \D-seven-backslash-fi    |%
+    \D-seven-backslash-si    |%
+    \D-seven-backslash-ti    |%
 
-  \DD-seven-fi |%
+    \DD          |%
 
-  \Dp          |%
-  \Dg          |%
-}
+    \DD-seven    |%
+    \DD-seven-fi |%
+    \DD-seven-si |%
+    \Fr-six      |%
+    \DD-seven-siflat |%
+    \DD-seven-ti |%
+
+    \DD-seven-backslash-si     |%
+    \It-six                    |%
+    \DD-seven-backslash-siflat |%
+    \Ge-six                    |%
+    \DD-nineflat-backslash-siflat |%
+
+    \Dp          |%
+    \Dg          |%
+  }
 #+END_SRC
 
 *** [Lyrics] Dur-Dominante — Major Dominant Commands
@@ -739,7 +760,20 @@ commandsFunctionTheoryDurDominante = \lyricmode {
   "\D-seven-backslash-si" |%
   "\D-seven-backslash-ti" |%
 
-  "\DD-seven-fi"  |%
+  "\DD"              |%
+
+  "\DD-seven"        |%
+  "\DD-seven-fi"     |%
+  "\DD-seven-si"     |%
+  "\Fr-six"          |%
+  "\DD-seven-siflat" |%
+  "\DD-seven-ti"     |%
+
+  "\DD-seven-backslash-si"        |%
+  "\It-six"                       |%
+  "\DD-seven-backslash-siflat"    |%
+  "\Ge-six"                       |%
+  "\DD-nineflat-backslash-siflat" |%
 
   "\Dp"           |%
   "\Dg"           |%
