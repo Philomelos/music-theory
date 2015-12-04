@@ -2284,7 +2284,6 @@ D-nine-eight-fi = \markup\concat {
 }
 % ***** scale degree theory
 
-
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%% MAJOR DOMINANT SEVENTH %%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -2730,64 +2729,6 @@ D-seven-ti-eot = \markup {
 }
 % ***** scale degree theory
 
-
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%%%%%%%%% MAJOR DOMINANT SEVENTH NO ROOT %%%%%%%%%
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-% * Dominant seventh no root (major)
-% ** 1st inv.
-% *** 3rd, 5th or 8th on top (unspecified)
-% **** closed, open, or mixed pos. (unspecified)
-% ***** function theory
-D-seven-backslash-fi = \markup {
-  \concat {
-    \center-column {
-      \overlay {
-        D
-        \rotate #90
-        \override #'(thickness . 1.5)
-        \draw-line #'(2 . 2)
-        %\vcenter
-        %\magnify #0.6 { 3 }
-      }
-      \raise #1.8
-      \magnify #0.6 { 3 }
-      %\translate #'(0 . 1.8)
-      %\magnify #0.6 { 3 }
-      %\translate-scaled #'(0 . 1.6)
-      %\magnify #0.6 { 3 }
-    }
-    \super \smaller 7
-  }
-}
-% ***** scale degree theory
-
-% * Dominant of the dominant seventh (major)
-% ** 1st inv.
-% *** 3rd, 5th or 8th on top (unspecified)
-% **** closed, open, or mixed pos. (unspecified)
-% ***** function theory
-DD-seven-fi = \markup {
-  \concat {
-    \center-column {
-      \overlay {
-        D
-        \translate #'(-0.5 . 0.5)
-        D
-      }
-      \raise #1.8
-      \magnify #0.6 { 3 }
-      %\translate #'(0 . 1.8)
-      %\magnify #0.6 { 3 }
-      %\translate-scaled #'(0 . 1.6)
-      %\magnify #0.6 { 3 }
-    }
-    \super %\smaller
-    7
-  }
-}
-% ***** scale degree theory
-
 % * Dominant seventh (major)
 % ** 2nd inv.
 % *** 3rd, 5th or 8th on top (unspecified)
@@ -2830,6 +2771,268 @@ D-seven-backslash-ti = \markup {
   }
 }
 % ***** scale degree theory
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%% Verkuerzte Dur-Dominantseptakkorde %%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% * Dominant seventh no root (major)
+% ** 1st inv.
+% *** 3rd, 5th or 8th on top (unspecified)
+% **** closed, open, or mixed pos. (unspecified)
+% ***** function theory
+D-seven-backslash-fi = \markup {
+  \concat {
+    \center-column {
+      \overlay {
+        D
+        \rotate #90
+        \override #'(thickness . 1.5)
+        \draw-line #'(2 . 2)
+        %\vcenter
+        %\magnify #0.6 { 3 }
+      }
+      \raise #1.8
+      \magnify #0.6 { 3 }
+      %\translate #'(0 . 1.8)
+      %\magnify #0.6 { 3 }
+      %\translate-scaled #'(0 . 1.6)
+      %\magnify #0.6 { 3 }
+    }
+    \super \smaller 7
+  }
+}
+% ***** scale degree theory
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%% Dur-Doppeldominantakkorde %%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% * Dominant of the dominant (major)
+% ** root pos.
+% *** 3rd, 5th or 8th on top (unspecified)
+% **** closed, open, or mixed pos. (unspecified)
+% ***** function theory
+DD = \markup {
+  \overlay {
+    D
+    \translate #'(-0.5 . 0.5)
+    D
+  }
+}
+% ***** scale degree theory
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%% Dur-Doppeldominantseptakkorde %%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% * Dominant of the dominant seventh (major)
+% ** root pos.
+% *** 3rd, 5th or 8th on top (unspecified)
+% **** closed, open, or mixed pos. (unspecified)
+% ***** function theory
+DD-seven = \markup {
+  \concat {
+    \center-column {
+      \overlay {
+        D
+        \translate #'(-0.5 . 0.5)
+        D
+      }
+    }
+    \super %\smaller
+    7
+  }
+}
+% ***** scale degree theory
+
+% * Dominant of the dominant seventh (major)
+% ** 1st inv.
+% *** 3rd, 5th or 8th on top (unspecified)
+% **** closed, open, or mixed pos. (unspecified)
+% ***** function theory
+DD-seven-fi = \markup {
+  \concat {
+    \center-column {
+      \overlay {
+        D
+        \translate #'(-0.5 . 0.5)
+        D
+      }
+      \raise #1.8
+      \magnify #0.6 { 3 }
+    }
+    \super
+    7
+  }
+}
+% ***** scale degree theory
+
+% * Dominant of the dominant seventh (major)
+% ** 2nd inv.
+% *** 3rd, 5th or 8th on top (unspecified)
+% **** closed, open, or mixed pos. (unspecified)
+% ***** function theory
+DD-seven-si = \markup {
+  \concat {
+    \center-column {
+      \overlay {
+        D
+        \translate #'(-0.5 . 0.5)
+        D
+      }
+      \raise #1.8
+      \magnify #0.6 { 5 }
+    }
+    \super
+    7
+  }
+}
+% ***** scale degree theory
+
+% * French Sixth (major)
+% ** (2nd inv.)
+% *** 3rd, 5th or 8th on top (unspecified)
+% **** closed, open, or mixed pos. (unspecified)
+% ***** function theory
+Fr-six = \markup\concat {
+    Fr
+    \super
+    6
+}
+% ***** scale degree theory
+
+DD-seven-siflat = \markup {
+  \concat {
+    \center-column {
+      \overlay {
+        D
+        \translate #'(-0.5 . 0.5)
+        D
+      }
+      \raise #1.8
+      \magnify #0.6 { 5> }
+    }
+    \super
+    7
+  }
+}
+% ***** scale degree theory
+
+% * Dominant of the dominant seventh (major)
+% ** 3rd inv.
+% *** 3rd, 5th or 8th on top (unspecified)
+% **** closed, open, or mixed pos. (unspecified)
+% ***** function theory
+DD-seven-ti = \markup {
+  \concat {
+    \center-column {
+      \overlay {
+        D
+        \translate #'(-0.5 . 0.5)
+        D
+      }
+      \raise #1.8
+      \magnify #0.6 { 7 }
+    }
+  }
+}
+% ***** scale degree theory
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%% Verkuerzte Dur-Doppeldominantseptakkorde %%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% * Dominant of the dominant seventh no root (major)
+% ** 2nd inv.
+% *** 3rd, 5th or 8th on top (unspecified)
+% **** closed, open, or mixed pos. (unspecified)
+% ***** function theory
+DD-seven-backslash-si = \markup {
+  \concat {
+    \center-column {
+      \overlay {
+        D
+        \translate #'(-0.5 . 0.5)
+        D
+        \rotate #85
+        \override #'(thickness . 1.5)
+        \translate #'(-0.5 . 0)
+        \draw-line #'(2.5 . 2.5)
+
+        \translate #'(1.75 . 0.25)
+    \super \smaller 7
+      }
+      \raise #1.8
+      \magnify #0.6 { 5 }
+    }
+
+  }
+}
+% ***** scale degree theory
+
+% * Italian Sixth (major)
+% ** (2nd inv.)
+% *** 3rd, 5th or 8th on top (unspecified)
+% **** closed, open, or mixed pos. (unspecified)
+% ***** function theory
+It-six = \markup\concat {
+    It
+    \super
+    6
+}
+% ***** scale degree theory
+DD-seven-backslash-siflat = \markup {
+  \concat {
+    \center-column {
+      \overlay {
+        D
+        \translate #'(-0.5 . 0.5)
+        D
+        \rotate #85
+        \override #'(thickness . 1.5)
+        \translate #'(-0.5 . 0)
+        \draw-line #'(2.5 . 2.5)
+
+        \translate #'(1.75 . 0.25)
+    \super \smaller 7
+      }
+      \raise #1.8
+      \magnify #0.6 { 5> }
+    }
+  }
+}
+% ***** scale degree theory
+
+% * German Sixth (major)
+% ** (2nd inv.)
+% *** 3rd, 5th or 8th on top (unspecified)
+% **** closed, open, or mixed pos. (unspecified)
+% ***** function theory
+Ge-six = \markup\concat {
+    Ge
+    \super
+    6
+}
+% ***** scale degree theory
+DD-nineflat-backslash-siflat = \markup {
+  \concat {
+    \center-column {
+      \overlay {
+        D
+        \translate #'(-0.5 . 0.5)
+        D
+        \rotate #85
+        \override #'(thickness . 1.5)
+        \translate #'(-0.5 . 0)
+        \draw-line #'(2.5 . 2.5)
+
+        \translate #'(1.75 . 0.25)
+        \super \smaller 9>
+      }
+      \raise #1.8
+      \magnify #0.6 { 5> }
+    }
+  }
+}
+% ***** scale degree theory
+
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%% Dur-Dominant-Moll-Parallele %%%%%%%%%%
@@ -3946,6 +4149,28 @@ s-nine-eight-fi = \markup\concat {
   \super { \smaller 9 \hspace #0.25 \raise #0.5 \draw-line #'(1 . 0) \hspace #0.25 \smaller 8 }
 }
 % ***** scale degree theory
+
+% * Doppeltübermäßiger Terzquartakkord ("minor")
+% * (1st inv.)
+% *** 3rd, 5th, or 8th on top (unspecified)
+% **** closed, open, or mixed pos. (unspecified)
+% ***** function theory
+aj-sixsharponesharp-fi = \markup\concat {
+  \center-column {
+    aj
+    \raise #1.8
+    \magnify #0.6 { 3 }
+  }
+  \super {
+    \center-column {
+      \line { \smaller 6> }
+      \raise #1.5
+      \line { \smaller 1> }
+    }
+  }
+}
+% ***** scale degree theory
+
 
 % * subdominant (minor)
 % ** 2nd inv.
